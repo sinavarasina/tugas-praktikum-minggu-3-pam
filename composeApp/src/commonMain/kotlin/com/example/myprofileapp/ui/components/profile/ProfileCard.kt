@@ -1,5 +1,6 @@
 package com.example.myprofileapp.ui.components.profile
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -10,6 +11,7 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.myprofileapp.ui.style.colorscheme.CatppuccinMocha
 
 @Composable
 fun ProfileCard(content: @Composable () -> Unit){
@@ -17,6 +19,9 @@ fun ProfileCard(content: @Composable () -> Unit){
         modifier = Modifier.fillMaxWidth(),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
         shape = RoundedCornerShape(12.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = CatppuccinMocha.mantle
+        )
     ) {
         Column(
             modifier = Modifier.padding(16.dp),
