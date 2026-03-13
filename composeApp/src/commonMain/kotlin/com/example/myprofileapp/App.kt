@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Badge
 import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Link
 import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material.icons.filled.Web
 import androidx.compose.material3.Button
@@ -75,7 +76,7 @@ fun App() {
                             text = "+6285117788740"
                         )
                         InfoItem(
-                            icon = Icons.Default.Web,
+                            icon = Icons.Default.Link,
                             text = "sinanonym.my.id"
                         )
                     }
